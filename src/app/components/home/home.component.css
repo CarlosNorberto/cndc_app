@@ -1,0 +1,127 @@
+.content-monitor{
+    padding: 0px;
+    background: #000;
+    color: #fff;
+}
+.content-monitor .content{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.fila{
+    flex: 1 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0px;
+}
+.in div:last-child{
+    background: rgb(112, 129, 14) !important;
+}
+.out div:last-child{
+    background: rgb(187, 108, 18) !important;
+}
+.fila div{
+    border: 1px dashed rgb(69, 69, 70);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto-Regular';
+}
+.fila div:nth-child(1){
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 100px;
+}
+.fila div:nth-child(2){
+    flex: 4;
+    min-width: 150px;
+    padding-left: 10px;
+    font-size: 35px;
+    justify-content: flex-start;
+}
+.fila div:nth-child(3){
+    max-width: 300px;
+    min-width: 300px;
+    font-size: 35px;
+}
+.fila div:nth-child(4){
+    max-width: 200px;
+    min-width: 200px;
+    font-size: 35px;
+}
+.photo{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.ingreso{
+    color: rgb(240, 247, 184) !important;
+    /* color: #222 !important; */
+}
+.salida{
+    color: rgb(247, 243, 4) !important;
+    /* color: #222 !important; */
+}
+
+.hora_actual_server{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border: 0px;
+    font-family: 'Roboto-Bold';
+    font-size: 100px;
+    background: #111;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.themes{
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.select-theme{
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+.fullscreen{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.fullscreen button{
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+    color: #ddd;
+    outline: none;
+}
+.fullscreen button:hover{
+    color: #fff;
+}
+.fullscreen button mat-icon{
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+}

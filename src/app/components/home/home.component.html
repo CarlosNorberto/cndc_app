@@ -1,0 +1,52 @@
+<div #content class="content-monitor">
+	<div class="content" *ngFor="let acceso of accesos">
+
+		<div [ngClass]="acceso[0][3]=='INGRESO'?'fila in':'fila out'">
+			<div class="photo" [style.background-image]="'url(' + url + 'get-photo/' + acceso[0][5] + '.jpg)'"></div>
+			<div>{{acceso[0][1]}}</div>
+			<div>{{acceso[0][2]}}</div>
+			<div [ngClass]="acceso[0][3]=='INGRESO'?'ingreso':'salida'">{{acceso[0][3]}}</div>
+		</div>
+
+		<div [ngClass]="acceso[1][3]=='INGRESO'?'fila in':'fila out'">
+			<div class="photo" [style.background-image]="'url(' + url + 'get-photo/' + acceso[1][5] + '.jpg)'"></div>
+			<div>{{acceso[1][1]}}</div>
+			<div>{{acceso[1][2]}}</div>
+			<div [ngClass]="acceso[1][3]=='INGRESO'?'ingreso':'salida'">{{acceso[1][3]}}</div>
+		</div>
+
+		<div [ngClass]="acceso[2][3]=='INGRESO'?'fila in':'fila out'">
+			<div class="photo" [style.background-image]="'url(' + url + 'get-photo/' + acceso[2][5] + '.jpg)'"></div>
+			<div>{{acceso[2][1]}}</div>
+			<div>{{acceso[2][2]}}</div>
+			<div [ngClass]="acceso[2][3]=='INGRESO'?'ingreso':'salida'">{{acceso[2][3]}}</div>
+		</div>
+
+		<div [ngClass]="acceso[3][3]=='INGRESO'?'fila in':'fila out'">
+			<div class="photo" [style.background-image]="'url(' + url + 'get-photo/' + acceso[3][5] + '.jpg)'"></div>
+			<div>{{acceso[3][1]}}</div>
+			<div>{{acceso[3][2]}}</div>
+			<div [ngClass]="acceso[3][3]=='INGRESO'?'ingreso':'salida'">{{acceso[3][3]}}</div>
+		</div>
+
+		<div [ngClass]="acceso[4][3]=='INGRESO'?'fila in':'fila out'">
+			<div class="photo" [style.background-image]="'url(' + url + 'get-photo/' + acceso[4][5] + '.jpg)'"></div>
+			<div>{{acceso[4][1]}}</div>
+			<div>{{acceso[4][2]}}</div>
+			<div [ngClass]="acceso[4][3]=='INGRESO'?'ingreso':'salida'">{{acceso[4][3]}}</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="hora_actual_server" *ngFor="let acceso of accesos">
+	{{acceso[0][4]}}
+</div>
+
+<div class="fullscreen">
+	<button type="button" (click)="full()"><mat-icon>fullscreen</mat-icon></button>
+</div>
+
+<!-- <div class="themes">
+	<div class="select-theme" *ngFor="let theme of themes" (click)="changeTheme(theme.id)" [style.background]="theme.color"></div>
+</div> -->
